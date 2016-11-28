@@ -161,7 +161,7 @@ module.exports = function(resource) {
 
         // Add the required params if needed.
         if (path.options.required) {
-          definition.required.push(name);
+          definitions[modelName].required.push(name);
         }
 
         // Set enum values if applicable
