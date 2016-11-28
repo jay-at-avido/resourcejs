@@ -137,7 +137,7 @@ module.exports = function(resource) {
     var definitions = {};
 
     definitions[modelName] = {
-//      required: [],
+      required: [],
       title: modelName,
       properties: {},
     };
@@ -161,7 +161,7 @@ module.exports = function(resource) {
 
         // Add the required params if needed.
         if (path.options.required) {
-//          definition.required.push(name);
+          definition.required.push(name);
         }
 
         // Set enum values if applicable
